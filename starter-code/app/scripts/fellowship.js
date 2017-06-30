@@ -119,11 +119,16 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
-var Aragorn = buddies[3];
-  var New = document.createTextNode(New);
- New = "Aragorn";
- 
+// var Aragorn = buddies[3];
+ // var New = document.createTextNode(New);
+ // New = "Aragorn"
+ var article = document.getElementsByTagName("article")[1];
+ var rivendale = article.lastChild;
+ var li = rivendale.lastChild;
+ var items = li.childNodes;
+ items[3].innerText = "Aragorn";
 
+console.log(items);
 
 }
 beautifulStranger();
