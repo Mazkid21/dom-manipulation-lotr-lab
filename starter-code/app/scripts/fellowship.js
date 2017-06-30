@@ -97,25 +97,19 @@ keepItSecretKeepItSafe();
 
 
 function makeBuddies() {
-  // create an aside tag
-  var article = document.getElementsByTagName("article");
-  var aside = document.createElement("aside");
-  var listBud = document.createElement("ul");
-   var budLi = document.createElement("li");
-    for (i=0; i < buddies.length; i++); {
-   budLi.append(buddies[0]); }
-  // attach an unordered list of the 'buddies' in the aside
-   
-  var buddy = buddies[i];
- 
-  var name = document.createTextNode(buddy);
-      
-      listBud.append(budLi);
-      aside.append(listBud);
+ var article = document.getElementsByTagName("article");
+ var aside = document.createElement("aside");
+ var buddyList = document.createElement("ul");
+
+    for (i = 0; i<buddies.length; i++) {
+      var buddy = buddies[i];
+      var li = document.createElement("li");
+      var name = document.createTextNode(buddy);
+      li.appendChild(name);
+      buddyList.appendChild(li);
+      aside.appendChild(buddyList);
       article[1].appendChild(aside);
-    
-  // insert your aside as a child element of rivendell
-  //aside.appendChild(lands[1]);
+    }
 }
 
 makeBuddies();
@@ -125,7 +119,14 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+var Aragorn = buddies[3];
+  var New = document.createTextNode(New);
+ New = "Aragorn";
+ 
+
+
 }
+beautifulStranger();
 
 
 // Part 6
