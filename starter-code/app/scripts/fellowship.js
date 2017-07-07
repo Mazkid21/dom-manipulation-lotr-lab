@@ -138,8 +138,13 @@ beautifulStranger();
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
-}
 
+  var leaving = document.querySelector("ul");
+  rivendell= document.querySelector('article').nextSibling;
+    rivendell.appendChild(leaving);
+
+}
+leaveTheShire();
 
 // Part 7
 
@@ -148,9 +153,9 @@ function forgeTheFellowShip() {
   // create a new div called 'the-fellowship' within rivendell
   // add each hobbit and buddy one at a time to 'the-fellowship'
   // after each character is added make an alert that they have joined your party
-}
 
-
+  }
+  
 // Part 8
 
 
